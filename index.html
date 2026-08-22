@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cash flow v1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Panel financiero</h1>
+    </header>
+
+    <main>
+
+        <!-- INICIO Resumen Saldos -->
+        <section class="resumen-saldos">
+            <h2>Resumen Saldo</h2>
+
+            <div class="tarjeta-saldo">
+                <h3>Cobros</h3>
+                <p>20.000</p>
+            </div>
+
+            <div class="tarjeta-saldo">
+                <h3>Pagos</h3>
+                <p>15.000</p>
+            </div>
+
+            <div class="tarjeta-saldo">
+                <h3>Saldo Final</h3>
+                <p>5.000</p>
+            </div>
+        </section>
+        <!-- FIN  Resumen Saldos-->
+
+        <!-- INICIO Formulario Movimientos -->
+        <section class="formulario-movimientos">
+            <h2>Añadir Nuevo Movimiento</h2>
+            <form id="form-nuevo-mov">
+
+                <label for="fecha">Fecha</label>
+                <input type="date" id="fecha" name="fecha" required>
+
+                <label for="importe">Importe</label>
+                <input type="number" id="importe" name="importe" step="0.01" required>
+
+                <label for="descripcion">Descripción</label>
+                <input type="text" id="descripcion" name="descripcion">
+
+                <label for="categoria">ID Categoría</label>
+                <select id="categoria" name="categoria" required>
+                    <option value="" selected disabled>-- Selecciona una categoría --</option>
+                    <option value="ALQ">Alquiler</option>
+                    <option value="NOM">Nóminas</option>
+                    <option value="COBR">Cobros de clientes</option>
+                </select>
+
+                <button type="submit">Añadir Movimiento</button>
+
+            </form>
+        </section>
+        <!-- FIN Formulario Movimientos -->
+
+        <!-- INICIO Historial Movimientos -->
+        <section class="historial-movimientos">
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Fecha</th>
+                        <th>Importe</th>
+                        <th>Descripción</th>
+                        <th>Categoría</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>2026-08-01</td>
+                        <td>-850.00</td>
+                        <td>Pago alquiler oficina de agosto</td>
+                        <td>ALQ</td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>2026-08-28</td>
+                        <td>-2400.50</td>
+                        <td>Nóminas plantilla agosto</td>
+                        <td>NOM</td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </section>
+        <!-- FIN Historial Movimientos -->
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Jaume González Surroca - Estudiante de DAW</p>
+        <p>
+            <a href="https://github.com/yaume10" target="_blank">GitHub de Jaume</a> |
+            <a href="https://www.linkedin.com/in/jaume-gonzalez-administrativo/" target="_blank">LinkedIn de Jaume</a>
+        </p>
+    </footer>
+
+</body>
+
+</html>
