@@ -1,0 +1,199 @@
+/*  INICIO Estilo Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --fondo-app: #f4f7f6;
+    --texto-principal: #333333;
+    --color-cabecera: #2c3e50;
+    --color-positivo: #27ae60;
+    --color-negativo: #e74c3c;
+    --color-blanco: #ffffff;
+}
+
+body {
+    background-color: var(--fondo-app);
+    color: var(--texto-principal);
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: var(--color-cabecera);
+    text-align: center;
+}
+
+/*  FIN Estilo Base */
+
+
+/* INICIO Cabecera Principal */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-top: 20px;
+}
+
+header h1 {
+    color: var(--color-cabecera);
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* INICIO Cabecera Principal */
+
+/*  INICIO Sección Resumen Saldo */
+.resumen-saldos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.resumen-saldos h2 {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.tarjeta-saldo {
+    background-color: var(--color-blanco);
+    flex: 1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.tarjeta-saldo h3 {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.tarjeta-saldo p {
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--color-cabecera);
+}
+
+/*  FIN Sección Resumen Saldo */
+
+
+/*  INICIO Sección Formulario Nuevos Movimientos */
+.formulario-movimientos {
+    background-color: var(--color-blanco);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    margin-bottom: 40px;
+}
+
+#form-nuevo-mov label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#form-nuevo-mov input,
+#form-nuevo-mov select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+#form-nuevo-mov button {
+    background-color: var(--color-cabecera);
+    color: var(--color-blanco);
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 10px;
+}
+
+#form-nuevo-mov button:hover {
+    background-color: #1a252f;
+    /* Un azul todavía más oscuro */
+}
+
+/*  FIN Sección Formulario Nuevos Movimientos */
+
+
+/*  INICIO Sección Historial */
+.historial-movimientos {
+    background-color: var(--color-blanco);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th,
+td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+th {
+    background-color: #f8f9fa;
+    color: var(--color-cabecera);
+    font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #fcfcfc;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/*  FIN Sección Historial */
+
+
+/*  INICIO Footer */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    color: #777;
+    font-size: 14px;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: var(--color-cabecera);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
