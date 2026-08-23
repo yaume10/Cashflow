@@ -21,7 +21,8 @@ public class Movimientos {
     @JoinColumn(name = "id_categoria")
     private Categoria categoria;
 
-    public Movimiento() {}
+    public Movimientos() {
+    }
 
     // Getters y Setters
     public Long getId() {
